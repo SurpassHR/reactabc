@@ -86,7 +86,7 @@ function App() {
         {currTodoItem.map((todo) => {
           return (
             <li className="todo-item-in-process" key={todo.itemId}>
-              <input type="checkbox" name="finished" onChange={(e) => {onCheck(todo.itemId, e.target.checked)}} /> {todo.itemContent}
+              <input type="checkbox" name="finished" onChange={(e) => {onCheck(todo.itemId, e.target.checked)}} />{todo.itemContent + ' '}
               <button className="delete" onClick={() => {onDelete(todo.itemId, "unfinished")}}>Delete</button>
             </li>
           )
