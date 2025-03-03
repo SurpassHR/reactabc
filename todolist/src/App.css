@@ -1,10 +1,37 @@
 #root {
-  max-width: 1280px;
+  max-width: 800px; /* Limit overall width */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: sans-serif;
+  background-color: #f8f8fa; /* Light background */
+}
+
+body {
+  background-color: #e9e9f0; /* Slightly different background */
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  width: 100%; /* Occupy the container width */
+  max-width: 600px; /* Max width for the lists */
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+}
+
+hr {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1rem 0;
 }

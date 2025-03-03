@@ -68,6 +68,7 @@ function App() {
     <>
       <NewTodoForm addTodoItem={addTodoItem}></NewTodoForm>
       <NewUnfinishedTodoList currTodoItem={currTodoItem} onCheck={onCheck} onDelete={onDelete}></NewUnfinishedTodoList>
+      <hr />
       <NewFinishedTodoList currFinishedItem={currFinishedItem} onDelete={onDelete}></NewFinishedTodoList>
     </>
   )

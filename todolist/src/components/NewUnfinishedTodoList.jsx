@@ -1,3 +1,5 @@
+import './NewUnfinishedTodoList.css';
+
 export default function NewUnFinishedTodoList({ currTodoItem, onCheck, onDelete }) {
   return (
     <>
